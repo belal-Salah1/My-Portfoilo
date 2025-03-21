@@ -562,7 +562,7 @@ img {
               content: attr(data-width);
             }
             &:nth-child(3)::before {
-              content: "GitHub";
+              content: "Git&Github";
             }
             &:nth-child(3)::after {
               content: attr(data-width);
