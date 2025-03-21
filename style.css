@@ -275,9 +275,19 @@ img{
           text-align: start;
         }
       }
+      .buttons{
+        a{
+          button{
+            margin-bottom: 14px;
+          }
+        }
+      }
       ul {
-        transform: translateX(169px);
-        margin: 40px 0 0;
+        margin: 74px 0 0;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-85px, -50px);
       }
     }
   }
