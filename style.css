@@ -301,7 +301,7 @@ img {
 /* End Landing */
 .about-me {
   text-align: center;
-  margin-top: var(--main-margin);
+  margin-top: calc(var(--main-margin)/5);
   margin-bottom: var(--main-margin);
   h1 {
     font-size: var(--main-size);
