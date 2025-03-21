@@ -275,7 +275,7 @@ img {
       flex-basis: 100%;
       .text {
         p {
-          text-align: start;
+          text-align: center;
         }
       }
       .buttons {
