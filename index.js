@@ -1,4 +1,4 @@
-// import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 let spans = document.querySelectorAll('span');
 let navbar = document.querySelector('.navbar');
 let navbarUl = document.querySelector('.navbar ul');
