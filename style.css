@@ -274,23 +274,32 @@ img {
     .content {
       flex-basis: 100%;
       .text {
+        h1{
+          font-size: 29px;
+        }
+        h2{
+          font-size: 24px;
+        }
         p {
           text-align: center;
         }
       }
       .buttons {
+        display: flex;
+        justify-content: center;
         a {
           button {
             margin-bottom: 14px;
+            padding: 10px 24px;
           }
         }
       }
       ul {
-        margin: 74px 0 0;
+        margin: 65px 0 ;
         position: relative;
         left: 50%;
         top: 50%;
-        transform: translate(-85px, -50px);
+        transform: translate(-89px, -50px);
       }
     }
   }
