@@ -7,8 +7,29 @@ let burgerIcon = document.querySelector('.burger')
 let readMoreButton = document.querySelector('.about-me button');
 let readMoreDiv = document.querySelector('.read-more');
 let form = document.getElementById('form');
-// handle burger icon 
+let jobTitle = document.querySelector('.landing .text h2');
+// console.log(jobTitle)
 
+// handle job title 
+const jobTitleLetters = ['F','r','o','n','t','e','n','d', ' ', 'D','e','v','e','l','o','p','e','r'];
+let counter = 0;
+function typewriter() {
+  if (counter < jobTitleLetters.length) {
+    jobTitle.textContent += jobTitleLetters[counter];
+    counter++;
+    setTimeout(typewriter, 150); 
+  }else {
+    jobTitle.textContent = jobTitle.textContent.slice(0, -1);
+    if (jobTitle.textContent.length > 0) {
+      setTimeout(typewriter, 150);
+    } else {
+      counter = 0;
+      setTimeout(typewriter, 1000); 
+    }
+  }
+}
+typewriter(); 
+// handle burger icon 
 burgerIcon.addEventListener('click' , ()=>{
     if(window.innerWidth <=770){
 
@@ -29,9 +50,6 @@ function setUlDisplayBLock(){
 
 // hadle navbar style
 window.onscroll = function(){
-    // if(window.innerWidth <=770){
-    //     setUlDisplayNone();
-    // }
     if(checkWindowSrollY()){
         setBorder();
          setBackground();

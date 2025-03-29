@@ -186,6 +186,7 @@ img {
       h2 {
         font-size: 31px;
         margin-bottom: 10px;
+        color: var(--main-color);
       }
       p {
         font-size: 12px;
