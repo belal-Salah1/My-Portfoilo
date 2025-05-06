@@ -1,0 +1,121 @@
+
+@keyframes left-animation {
+    from{
+        transform: translateX(-180px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes right-animation {
+    from{
+        transform: translateX(180px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes paragraph-right-animation {
+    from{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dawn-animation {
+    from{
+        transform: translateY(calc(-100% - 100px));
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes dawn-sm-animation {
+    from{
+        transform: translateY(calc(-80%));
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes left-dawn-animation {
+    0%{
+        opacity: 0;
+        transform: translate(-225px, -92px);
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes right-dawn-animation {
+    0%{
+        opacity: 0;
+        transform: translate(330px, -92px);
+    }
+    50%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes up-animation {
+    from{
+        transform: translateY(260%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes up-sm-animation {
+    from{
+        transform: translateY(60%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-animation {
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    from {
+      clip-path: inset(0 0 0 100%); 
+    }
+    to {
+      clip-path: inset(0 0 0 0); 
+    }
+  }
+

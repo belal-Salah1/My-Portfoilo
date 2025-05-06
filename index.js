@@ -8,8 +8,12 @@ let readMoreButton = document.querySelector('.about-me button');
 let readMoreDiv = document.querySelector('.read-more');
 let form = document.getElementById('form');
 let jobTitle = document.querySelector('.landing .text h2');
-// console.log(jobTitle)
-
+let hiddensElements = document.querySelectorAll('.hidden');
+let logo = document.querySelector('.navbar .logo');
+let navbarLies = document.querySelectorAll('.navbar ul li');
+let landingH1 = document.querySelector('.landing h1');
+let landingH2 = document.querySelector('.landing h2');
+let landingparagraph = document.querySelector('.landing p');
 // handle job title 
 const jobTitleLetters = ['F','r','o','n','t','e','n','d', ' ', 'D','e','v','e','l','o','p','e','r'];
 let counter = 0;
@@ -172,4 +176,41 @@ form.onsubmit = function (e){
     alert('Form submit sucessfully')
 
 }
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+            
+        //     if(entry.target === logo){
+        //         entry.target.classList.add('logo-animation');
+        //     // observer.unobserve(entry.target);
+        // }
+        // else if(entry.target === navbarLies){
+        //     entry.target.classList.add('navbarLies-animation');
+        //     // observer.unobserve(entry.target);
+        // }
+        // else if(entry.target === landingH1){
+        //     entry.target.classList.add('h1-animation');
+        //     // observer.unobserve(entry.target);
+        // }
+        // else if(entry.target === landingH2){
+        //     entry.target.classList.add('h2-animation');
+        //     // observer.unobserve(entry.target);
+        // }
+        // else  if(entry.target === landingparagraph){
+        //     entry.target.classList.add('p-animation');
+        //     // observer.unobserve(entry.target);
+        // }
+        observer.unobserve(entry.target);
+    }
+
+            
+        else entry.target.classList.remove('show');
+    })
+}, {
+    threshold: .3
+})
+hiddensElements.forEach((el)=> observer.observe(el))
+
 
