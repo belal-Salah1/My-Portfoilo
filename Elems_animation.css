@@ -1,90 +1,120 @@
+/* إضافة حالة البداية لكل العناصر */
+.logo-animation,
+.navbarLies-animation,
+.landing-h1-animation,
+.landing-h2-animation,
+.landing-p-animation,
+.landing-buttons-animation,
+.landing-social-linkes-animation,
+.landing-image-animation,
+.about-me-h1-animation,
+.about-me-image-animation,
+.about-me-h2-animation,
+.about-me-p-animation,
+.about-me-button-animation,
+.educatoin-content-academic-animation,
+.education-content-academic-h3-animation,
+.education-content-self-learing-animation,
+.education-content-self-learing-h3-animation,
+.skills-h1-animation,
+.skills-h3-animation,
+.skills-front-animation,
+.skills-other-animation,
+.contect-me-animation,
+.contect-me-input-left-animation,
+.contect-me-input-right-animation,
+.contect-me-textArea-animation,
+.contect-me-button-aٌٌnimation {
+  opacity: 0; 
+}
+
 .logo-animation{
-    animation: left-animation var(--main--duration) linear .1s; 
+    animation: left-animation var(--main--duration) ease-out .1s forwards; 
   }
 
 .navbarLies-animation{
-    animation: dawn-animation var(--main--duration) linear;
+    animation: dawn-animation var(--main--duration) ease-out forwards;
   }
   /* landing animations*/
 .landing-h1-animation{
-   animation: left-animation var(--main--duration) linear 0.5s;
+   animation: left-animation var(--main--duration) ease-out 0.5s forwards;
  }
 .landing-h2-animation{
-  animation: dawn-animation var(--main--duration) linear 0.6s;
+  animation: dawn-animation var(--main--duration) ease-out 0.6s forwards;
 }
 .landing-p-animation{
-  animation: paragraph-right-animation var(--main--duration) linear 0.7s;
+  animation: paragraph-right-animation var(--main--duration) ease-out 0.7s forwards;
 }
 
 .landing-buttons-animation{
   animation: reveal 1s ease forwards .9s;
 }
 .landing-social-linkes-animation{
-  animation: up-animation var(--main--duration) linear 0.9s;
+  animation: up-animation var(--main--duration) ease-out 0.9s forwards;
 }
 .landing-image-animation{
-  animation: scale-animation var(--main--duration) linear 2s ;
+  animation: scale-animation var(--main--duration) ease-out 2s forwards;
 }
 /* about me animaton */
 .about-me-h1-animation{
-    animation: dawn-animation var(--main--duration) linear 0.2s ;
+    animation: dawn-animation var(--main--duration) ease-out 0.2s forwards;
 }
 .about-me-image-animation{
-    animation: scale-animation var(--main--duration) linear 0.2s ;
+    animation: scale-animation var(--main--duration) ease-out 0.2s forwards;
 }
 .about-me-h2-animation{
-  animation: left-animation var(--main--duration) linear 0.2s ;
+  animation: left-animation var(--main--duration) ease-out 0.2s forwards;
 }
 .about-me-p-animation{
-  animation: paragraph-right-animation var(--main--duration) linear 0.2s ;
+  animation: paragraph-right-animation var(--main--duration) ease-out 0.2s forwards;
 }
 .about-me-button-animation{
-  animation: up-animation var(--main--duration) linear 0.2s ;
+  animation: up-animation var(--main--duration) ease-out 0.2s forwards;
 }
 
 /* education animation */
 .educatoin-content-academic-animation{
-    animation: left-animation var(--main--duration) linear 0.6s ;
+    animation: left-animation var(--main--duration) ease-out 0.6s forwards;
 }
 .education-content-academic-h3-animation{
-    animation: left-dawn-animation var(--main--duration) linear 0.6s ;
+    animation: left-dawn-animation var(--main--duration) ease-out 0.6s forwards;
 }
 .education-content-self-learing-animation{
-    animation: right-animation var(--main--duration) linear 0.6s ;
+    animation: right-animation var(--main--duration) ease-out 0.6s forwards;
 }
 .education-content-self-learing-h3-animation{
-    animation: right-dawn-animation var(--main--duration) linear 0.6s ;
+    animation: right-dawn-animation var(--main--duration) ease-out 0.6s forwards;
 }
 
 /* start skills animation  */
 .skills-h1-animation{
-    animation: dawn-animation var(--main--duration) linear 0.2s ;
+    animation: dawn-animation var(--main--duration) ease-out 0.2s forwards ;
 }
 .skills-h3-animation{
-    animation: dawn-animation var(--main--duration) linear .6s ;
+    animation: dawn-animation var(--main--duration) ease-out .6s forwards ;
 }
 .skills-front-animation{
-  animation: left-animation var(--main--duration) linear 0.6s ;
+  animation: left-animation var(--main--duration) ease-out 0.6s forwards ;
 }
 .skills-other-animation{
-  animation:right-animation var(--main--duration) linear 0.6s ; 
+  animation:right-animation var(--main--duration) ease-out 0.6s forwards ; 
 }
 
 /* contact us animation  */
 .contect-me-animation{
-    animation: dawn-animation var(--main--duration) linear 0.2s ;
+    animation: dawn-animation var(--main--duration) ease-out 0.2s forwards ;
 }
 .contect-me-input-left-animation{
-    animation: left-animation var(--main--duration) linear 0.6s ;
+    animation: left-animation var(--main--duration) ease-out 0.6s forwards ;
 }
 .contect-me-input-right-animation{
-    animation: right-animation var(--main--duration) linear 0.6s ;
+    animation: right-animation var(--main--duration) ease-out 0.6s forwards ;
 }
 .contect-me-textArea-animation{
-    animation: up-sm-animation var(--main--duration) linear 0.6s ; 
+    animation: up-sm-animation var(--main--duration) ease-out 0.6s forwards ; 
 }
-.contect-me-button-animation{
-    animation: up-animation var(--main--duration) linear 0.6s ;
+.contect-me-button-aٌٌnimation{
+    animation: up-animation var(--main--duration) ease-out 0.6s forwards ;
 }
 
 

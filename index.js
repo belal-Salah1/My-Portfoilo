@@ -199,7 +199,9 @@ const observer = new IntersectionObserver((entries)=>{
 
             if(entry.target.classList.contains('nav-container')){
                 logo.classList.add('logo-animation');
-                // navbarLies.classList.add('navbarLies-animation');
+                navbarLies.forEach((li)=>{
+                    li.classList.add('navbarLies-animation');
+                })
             }
             if(entry.target.classList.contains('landing')){
                 landingH1.classList.add('landing-h1-animation');
