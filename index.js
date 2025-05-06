@@ -14,6 +14,21 @@ let navbarLies = document.querySelectorAll('.navbar ul li');
 let landingH1 = document.querySelector('.landing h1');
 let landingH2 = document.querySelector('.landing h2');
 let landingparagraph = document.querySelector('.landing p');
+let landingButtons = document.querySelector('.landing .buttons');
+let landingSocialLinkes = document.querySelector('.landing .social-linkes');
+let landingImage = document.querySelector('.landing img');
+let aboutMeH1 = document.querySelector('.about-me h1');
+let aboutMeImage = document.querySelector('.about-me img');
+let aboutMeH2 = document.querySelector('.about-me h2');
+let aboutMeP = document.querySelector('.about-me p');
+let aboutMeButton = document.querySelector('.about-me button');
+let contactMeInputLeft = document.querySelector('.contact-me .input-left');
+let contactMeInputRight = document.querySelector('.contact-me .input-right');
+let contactMeTextArea = document.querySelector('.contact-me .textArea');
+let contactMeButton = document.querySelector('.contact-me button');
+let animatedElements = document.querySelectorAll('.animated');
+let contactMeH1 = document.querySelector('.contact-me h1');
+console.log(landingSocialLinkes)
 // handle job title 
 const jobTitleLetters = ['F','r','o','n','t','e','n','d', ' ', 'D','e','v','e','l','o','p','e','r'];
 let counter = 0;
@@ -181,10 +196,37 @@ const observer = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         if(entry.isIntersecting){
             entry.target.classList.add('show');
+
+            if(entry.target.classList.contains('nav-container')){
+                logo.classList.add('logo-animation');
+                // navbarLies.classList.add('navbarLies-animation');
+            }
+            if(entry.target.classList.contains('landing')){
+                landingH1.classList.add('landing-h1-animation');
+                landingH2.classList.add('landing-h2-animation');
+                landingparagraph.classList.add('landing-p-animation');
+                landingButtons.classList.add('landing-buttons-animation');
+                // landingSocialLinkes.classList.add('landing-social-linkes-animation');
+                landingImage.classList.add('landing-image-animation');
+            }
+            if(entry.target.classList.contains('about-me')){
+                aboutMeH1.classList.add('about-me-h1-animation');
+                aboutMeImage.classList.add('about-me-image-animation');
+                aboutMeH2.classList.add('about-me-h2-animation');
+                aboutMeP.classList.add('about-me-p-animation');
+                aboutMeButton.classList.add('about-me-button-animation');
+            }
+            if(entry.target.classList.contains('contact-me')){
+                contactMeH1.classList.add('contact-me-h1-animation');
+                // contactMeInputLeft.classList.add('contact-me-input-left-animation');
+                // contactMeInputRight.classList.add('contact-me-input-right-animation');
+                contactMeTextArea.classList.add('contact-me-textArea-animation');
+                contactMeButton.classList.add('contact-me-button-animation');
+            }
             
-        //     if(entry.target === logo){
-        //         entry.target.classList.add('logo-animation');
-        //     // observer.unobserve(entry.target);
+            //     if(entry.target === logo){
+                // entry.target.classList.add('logo-animation');
+            // observer.unobserve(entry.target);
         // }
         // else if(entry.target === navbarLies){
         //     entry.target.classList.add('navbarLies-animation');

@@ -1,0 +1,97 @@
+.logo-animation{
+    animation: left-animation var(--main--duration) linear .1s; 
+  }
+
+.navbarLies-animation{
+    animation: dawn-animation var(--main--duration) linear;
+  }
+  /* landing animations*/
+.landing-h1-animation{
+   animation: left-animation var(--main--duration) linear 0.5s;
+ }
+.landing-h2-animation{
+  animation: dawn-animation var(--main--duration) linear 0.6s;
+}
+.landing-p-animation{
+  animation: paragraph-right-animation var(--main--duration) linear 0.7s;
+}
+
+.landing-buttons-animation{
+  animation: reveal 1s ease forwards .9s;
+}
+.landing-social-linkes-animation{
+  animation: up-animation var(--main--duration) linear 0.9s;
+}
+.landing-image-animation{
+  animation: scale-animation var(--main--duration) linear 2s ;
+}
+/* about me animaton */
+.about-me-h1-animation{
+    animation: dawn-animation var(--main--duration) linear 0.2s ;
+}
+.about-me-image-animation{
+    animation: scale-animation var(--main--duration) linear 0.2s ;
+}
+.about-me-h2-animation{
+  animation: left-animation var(--main--duration) linear 0.2s ;
+}
+.about-me-p-animation{
+  animation: paragraph-right-animation var(--main--duration) linear 0.2s ;
+}
+.about-me-button-animation{
+  animation: up-animation var(--main--duration) linear 0.2s ;
+}
+
+/* education animation */
+.educatoin-content-academic-animation{
+    animation: left-animation var(--main--duration) linear 0.6s ;
+}
+.education-content-academic-h3-animation{
+    animation: left-dawn-animation var(--main--duration) linear 0.6s ;
+}
+.education-content-self-learing-animation{
+    animation: right-animation var(--main--duration) linear 0.6s ;
+}
+.education-content-self-learing-h3-animation{
+    animation: right-dawn-animation var(--main--duration) linear 0.6s ;
+}
+
+/* start skills animation  */
+.skills-h1-animation{
+    animation: dawn-animation var(--main--duration) linear 0.2s ;
+}
+.skills-h3-animation{
+    animation: dawn-animation var(--main--duration) linear .6s ;
+}
+.skills-front-animation{
+  animation: left-animation var(--main--duration) linear 0.6s ;
+}
+.skills-other-animation{
+  animation:right-animation var(--main--duration) linear 0.6s ; 
+}
+
+/* contact us animation  */
+.contect-me-animation{
+    animation: dawn-animation var(--main--duration) linear 0.2s ;
+}
+.contect-me-input-left-animation{
+    animation: left-animation var(--main--duration) linear 0.6s ;
+}
+.contect-me-input-right-animation{
+    animation: right-animation var(--main--duration) linear 0.6s ;
+}
+.contect-me-textArea-animation{
+    animation: up-sm-animation var(--main--duration) linear 0.6s ; 
+}
+.contect-me-button-animation{
+    animation: up-animation var(--main--duration) linear 0.6s ;
+}
+
+
+
+
+
+
+
+
+
