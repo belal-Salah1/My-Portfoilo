@@ -12,7 +12,7 @@
 .about-me-h2-animation,
 .about-me-p-animation,
 .about-me-button-animation,
-.educatoin-content-academic-animation,
+.education-content-academic-animation,
 .education-content-academic-h3-animation,
 .education-content-self-learing-animation,
 .education-content-self-learing-h3-animation,
@@ -20,11 +20,12 @@
 .skills-h3-animation,
 .skills-front-animation,
 .skills-other-animation,
-.contect-me-animation,
-.contect-me-input-left-animation,
-.contect-me-input-right-animation,
-.contect-me-textArea-animation,
-.contect-me-button-aٌٌnimation {
+.contact-me-h1-animation,
+.contact-me-input-left-animation,
+.contact-me-input-right-animation,
+.contact-me-textArea-animation,
+.education-h1-animation,
+.contact-me-button-animation {
   opacity: 0; 
 }
 
@@ -73,7 +74,10 @@
 }
 
 /* education animation */
-.educatoin-content-academic-animation{
+.education-h1-animation{
+    animation: dawn-animation var(--main--duration) ease-out 0.2s forwards;
+}
+.education-content-academic-animation{
     animation: left-animation var(--main--duration) ease-out 0.6s forwards;
 }
 .education-content-academic-h3-animation{
@@ -101,20 +105,20 @@
 }
 
 /* contact us animation  */
-.contect-me-animation{
+.contact-me-h1-animation{
     animation: dawn-animation var(--main--duration) ease-out 0.2s forwards ;
 }
-.contect-me-input-left-animation{
+.contact-me-input-left-animation{
     animation: left-animation var(--main--duration) ease-out 0.6s forwards ;
 }
-.contect-me-input-right-animation{
+.contact-me-input-right-animation{
     animation: right-animation var(--main--duration) ease-out 0.6s forwards ;
 }
-.contect-me-textArea-animation{
+.contact-me-textArea-animation{
     animation: up-sm-animation var(--main--duration) ease-out 0.6s forwards ; 
 }
-.contect-me-button-aٌٌnimation{
-    animation: up-animation var(--main--duration) ease-out 0.6s forwards ;
+.contact-me-button-animation{
+    animation: up-animation var(--main--duration) ease-out 0.8s forwards ;
 }
 
 

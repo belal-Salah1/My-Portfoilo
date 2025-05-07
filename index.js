@@ -15,20 +15,34 @@ let landingH1 = document.querySelector('.landing h1');
 let landingH2 = document.querySelector('.landing h2');
 let landingparagraph = document.querySelector('.landing p');
 let landingButtons = document.querySelector('.landing .buttons');
-let landingSocialLinkes = document.querySelector('.landing .social-linkes');
+let landingSocialLinkes = document.querySelectorAll('.landing ul li');
 let landingImage = document.querySelector('.landing img');
 let aboutMeH1 = document.querySelector('.about-me h1');
 let aboutMeImage = document.querySelector('.about-me img');
 let aboutMeH2 = document.querySelector('.about-me h2');
 let aboutMeP = document.querySelector('.about-me p');
 let aboutMeButton = document.querySelector('.about-me button');
-let contactMeInputLeft = document.querySelector('.contact-me .input-left');
-let contactMeInputRight = document.querySelector('.contact-me .input-right');
-let contactMeTextArea = document.querySelector('.contact-me .textArea');
+let educationH1= document.querySelector('.education h1');
+let educationContentAcademic = document.querySelector('.education .acadimic-education');
+let educationContentAcademicH3 = document.querySelector('.education .acadimic-education h3');
+let educationContentSelfLearing = document.querySelector('.education .self-learing');
+let educationContentSelfLearingH3 = document.querySelector('.education .self-learing h3');
+let skillsH1 = document.querySelector('.skills h1');
+let skillsH3 = document.querySelectorAll('.skills h3');
+let skillsBoxes = document.querySelectorAll('.skills .box');
+let skillsFront = skillsBoxes[0];
+let skillsOther = skillsBoxes[1];
+let contactMeInputsDivs = document.querySelectorAll('.contact-me .inputs div');
+let contactMeInputsDivOne = contactMeInputsDivs[0];
+let contactMeInputsDivTwo = contactMeInputsDivs[1];
+let contactMeTextArea = document.querySelector('.contact-me textArea');
 let contactMeButton = document.querySelector('.contact-me button');
 let animatedElements = document.querySelectorAll('.animated');
 let contactMeH1 = document.querySelector('.contact-me h1');
-console.log(landingSocialLinkes)
+console.log(contactMeInputsDivOne)
+console.log(contactMeInputsDivs)
+console.log(contactMeTextArea)
+console.log(contactMeButton)
 // handle job title 
 const jobTitleLetters = ['F','r','o','n','t','e','n','d', ' ', 'D','e','v','e','l','o','p','e','r'];
 let counter = 0;
@@ -208,7 +222,7 @@ const observer = new IntersectionObserver((entries)=>{
                 landingH2.classList.add('landing-h2-animation');
                 landingparagraph.classList.add('landing-p-animation');
                 landingButtons.classList.add('landing-buttons-animation');
-                // landingSocialLinkes.classList.add('landing-social-linkes-animation');
+                landingSocialLinkes.forEach((li)=>li.classList.add('landing-social-linkes-animation'))
                 landingImage.classList.add('landing-image-animation');
             }
             if(entry.target.classList.contains('about-me')){
@@ -218,34 +232,26 @@ const observer = new IntersectionObserver((entries)=>{
                 aboutMeP.classList.add('about-me-p-animation');
                 aboutMeButton.classList.add('about-me-button-animation');
             }
+            if(entry.target.classList.contains('education')){
+                educationH1.classList.add('education-h1-animation');
+                educationContentAcademic.classList.add('education-content-academic-animation');
+                educationContentAcademicH3.classList.add('education-content-academic-h3-animation');
+                educationContentSelfLearing.classList.add('education-content-self-learing-animation');
+                educationContentSelfLearingH3.classList.add('education-content-self-learing-h3-animation');
+            }
+            if(entry.target.classList.contains('skills')){
+                skillsH1.classList.add('skills-h1-animation');
+                skillsH3.forEach((h3)=> h3.classList.add('skills-h3-animation'));
+                skillsFront.classList.add('skills-front-animation');
+                skillsOther.classList.add('skills-other-animation');
+            }
             if(entry.target.classList.contains('contact-me')){
                 contactMeH1.classList.add('contact-me-h1-animation');
-                // contactMeInputLeft.classList.add('contact-me-input-left-animation');
-                // contactMeInputRight.classList.add('contact-me-input-right-animation');
+                contactMeInputsDivOne.classList.add('contact-me-input-left-animation');
+                contactMeInputsDivTwo.classList.add('contact-me-input-right-animation');
                 contactMeTextArea.classList.add('contact-me-textArea-animation');
                 contactMeButton.classList.add('contact-me-button-animation');
             }
-            
-            //     if(entry.target === logo){
-                // entry.target.classList.add('logo-animation');
-            // observer.unobserve(entry.target);
-        // }
-        // else if(entry.target === navbarLies){
-        //     entry.target.classList.add('navbarLies-animation');
-        //     // observer.unobserve(entry.target);
-        // }
-        // else if(entry.target === landingH1){
-        //     entry.target.classList.add('h1-animation');
-        //     // observer.unobserve(entry.target);
-        // }
-        // else if(entry.target === landingH2){
-        //     entry.target.classList.add('h2-animation');
-        //     // observer.unobserve(entry.target);
-        // }
-        // else  if(entry.target === landingparagraph){
-        //     entry.target.classList.add('p-animation');
-        //     // observer.unobserve(entry.target);
-        // }
         observer.unobserve(entry.target);
     }
 
