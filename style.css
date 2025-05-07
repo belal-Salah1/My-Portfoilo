@@ -61,18 +61,9 @@ img {
   width: 100%;
   padding: 13px 100px;
   top: 0;
-  .logo{
-    
-  }
-  /* .logo-animation{
-    animation: left-animation var(--main--duration) linear .1s; 
-  } */
-  /* .navbarLies-animation{
-    animation: dawn-animation var(--main--duration) linear;
-  } */
+
   ul {
     li {
-      /* animation: dawn-animation var(--main--duration) linear; */
       margin-left: 40px;
       &:nth-child(1){
         animation-delay: 0.3s;
@@ -205,15 +196,7 @@ img {
 }
 
 /* End Header  */
-/* .h1-animation{
-  animation: left-animation var(--main--duration) linear 0.5s;
-} */
-/* .h2-animation{
-  animation: dawn-animation var(--main--duration) linear 0.6s;
-} */
-/* .p-animation{
-  animation: paragraph-right-animation var(--main--duration) linear 0.7s;
-} */
+
 .landing {
   min-height: calc(100vh - 88.13px);
   display: flex;
@@ -224,25 +207,21 @@ img {
     .text {
       h1 {
         font-size: 45px;
-        /* animation: left-animation var(--main--duration) linear 0.5s; */
       }
       h2 {
         font-size: 31px;
         height: 31px;
         margin-bottom: 10px;
         color: var(--main-color);
-        /* animation: dawn-animation var(--main--duration) linear 0.6s; */
       }
       p {
         font-size: 12px;
         font-weight: 500;
-        /* animation: paragraph-right-animation var(--main--duration) linear 0.7s; */
       }
     }
     .buttons {
       margin-top: 15px;
       margin-bottom: 15px;
-      /* animation: reveal 1s ease forwards .9s; */
       button {
         position: relative;
         padding: 15px 38px;
@@ -281,7 +260,6 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* animation: up-animation var(--main--duration) linear ; */
         &:nth-child(1){
           animation-delay: 1s;
         }
@@ -319,7 +297,6 @@ img {
     flex: 1;
     border-radius: 50%;
     border: 2px solid #83647e;
-    /* animation: scale-animation var(--main--duration) linear 2s ;  */
 
     img {
       height: 100%;
@@ -390,27 +367,23 @@ img {
     span {
       color: var(--main-color);
     }
-    /* animation: dawn-animation var(--main--duration) linear 0.2s ; */
   }
   .image {
     img {
       border-radius: 50%;
       border: 1px solid #ccc;
     }
-    /* animation: scale-animation var(--main--duration) linear 0.2s ; */
   }
   .text {
     h2 {
       margin-top: 10px;
       margin-bottom: 20px;
       letter-spacing: -1px;
-      /* animation: left-animation var(--main--duration) linear 0.2s ; */
     }
     p {
       font-size: 12px;
       font-weight: 500;
       margin-bottom: 15px;
-      /* animation: paragraph-right-animation var(--main--duration) linear 0.2s ; */
     }
   }
   button {
@@ -423,7 +396,6 @@ img {
     margin-right: 10px;
     background-color: transparent;
     overflow: hidden;
-    /* animation: up-animation var(--main--duration) linear 0.2s ; */
     &::before {
       content: "";
       position: absolute;
@@ -452,14 +424,12 @@ img {
       color: var(--main-color);
     }
     margin-bottom: 35px;
-    /* animation: dawn-sm-animation var(--main--duration) linear 0.2s ; */
   }
   .content {
     display: grid;
     grid-template-columns: repeat(2, auto);
     text-align: start;
     .acadimic-education {
-      /* animation: left-animation var(--main--duration) linear 0.6s ; */
       position: relative;
       &::before {
         content: "";
@@ -472,11 +442,9 @@ img {
       }
       h3 {
         font-size: var(--boxHeading-size);
-        /* animation: left-dawn-animation var(--main--duration) linear 0.6s ; */
       }
     }
     .self-learing {
-      /* animation: right-animation var(--main--duration) linear 0.6s ; */
       position: relative;
       &::before {
         content: "";
@@ -490,7 +458,6 @@ img {
 
       h3 {
         font-size: var(--boxHeading-size);
-        /* animation: right-dawn-animation var(--main--duration) linear 0.6s ; */
       }
     }
     .card {
@@ -709,9 +676,7 @@ img {
 
 /* End Skills  */
 
-/* .contactH1Animate{
-  animation: dawn-animation var(--main--duration) linear 0.2s ;
-} */
+
 .contact-me {
   filter: drop-shadow(0 0 8rem #ff00ee);
   text-align: center;
@@ -720,7 +685,6 @@ img {
   margin-inline: auto;
   max-width: 600px;
   h1 {
-    /* animation: dawn-animation var(--main--duration) linear 0.2s ; */
     font-size: var(--main-size);
     margin-bottom: 35px;
     span {
@@ -753,18 +717,11 @@ img {
       input {
         flex: 1;
       }
-      &:nth-child(1){
-        /* animation: left-animation var(--main--duration) linear 0.6s ; */
-      }
-      &:nth-child(2){
-        /* animation: right-animation var(--main--duration) linear 0.6s ; */
-      }
     }
   }
   textarea {
     resize: none;
     height: 220px;
-    /* animation: up-sm-animation var(--main--duration) linear 0.6s ; */
   }
   button {
     display: block;
@@ -777,7 +734,6 @@ img {
     border: 2px solid var(--border--color);
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    /* animation: up-animation var(--main--duration) linear 0.6s ; */
   }
 }
 @media screen and (max-width: 599px) {
