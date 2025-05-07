@@ -39,10 +39,7 @@ let contactMeTextArea = document.querySelector('.contact-me textArea');
 let contactMeButton = document.querySelector('.contact-me button');
 let animatedElements = document.querySelectorAll('.animated');
 let contactMeH1 = document.querySelector('.contact-me h1');
-console.log(contactMeInputsDivOne)
-console.log(contactMeInputsDivs)
-console.log(contactMeTextArea)
-console.log(contactMeButton)
+
 // handle job title 
 const jobTitleLetters = ['F','r','o','n','t','e','n','d', ' ', 'D','e','v','e','l','o','p','e','r'];
 let counter = 0;
