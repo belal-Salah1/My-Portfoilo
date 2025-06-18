@@ -48,7 +48,7 @@
 }
 
 .landing-buttons-animation{
-  animation: reveal 1s ease forwards .9s;
+  animation: left-animation 1s ease forwards .9s;
 }
 .landing-social-linkes-animation{
   animation: up-animation var(--main--duration) ease-out 0.9s forwards;
